@@ -1,6 +1,6 @@
 import React from "react";
 import Reply from "./Reply";
-import likedCount from "./LikedCount";
+import LikedCount from "./LikedCount";
 
 export default function Comment(props) {
   return (
@@ -24,7 +24,7 @@ export default function Comment(props) {
           <br />
           <span style={{ color: "#E4E6EB" }}>{props.content}</span>
 
-          <likedCount liked={props.liked} />
+          <LikedCount liked={props.liked} />
         </div>
       </div>
 

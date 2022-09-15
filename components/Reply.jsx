@@ -1,4 +1,5 @@
 import React from "react";
+import LikedCount from "./LikedCount";
 
 export default function Reply(props) {
   return (
@@ -20,14 +21,7 @@ export default function Reply(props) {
           </span>
           <br />
           <span style={{ color: "#E4E6EB" }}>{props.content}</span>
-          <div
-            className={
-              props.likeNum > 0 ? "d-flex align-items-center gap-1" : "d-none"
-            }
-          >
-            <img src="/like.svg" width={20}></img>
-            <span style={{ color: "#B0B3B8" }}>{props.likeNum}</span>
-          </div>
+          <LikedCount liked={props.liked} />
         </div>
       </div>
     </div>
