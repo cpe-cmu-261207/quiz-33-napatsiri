@@ -5,7 +5,7 @@ export default function Reply(props) {
     <div>
       <div className="d-flex gap-2 my-2 ps-5">
         <img
-          src={props.proFile_Img}
+          src={props.proFile_img}
           width="48"
           height="48"
           className="rounded-circle"
